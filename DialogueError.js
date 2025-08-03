@@ -48,7 +48,7 @@
  * @default 99
  * 
  * @param stacktraceFontSize
- * @text Max Lines per Page
+ * @text  Error Text Font Size
  * @type number
  * @default 18
  * 
@@ -200,4 +200,5 @@
             }
         }
     }
+
 })();
