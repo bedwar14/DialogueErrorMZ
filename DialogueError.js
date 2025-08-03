@@ -73,6 +73,8 @@
             .map(line => {
                 return line
                     .replace(/^.*[\/\\]([^\/\\]+\.js:\d+:\d+)\)?$/, 'at $1')
+                //from start of line all characters until the capture group (filename.js:numbers:numbers) followed by close parenthesis
+                //insert the capture group value into $1
             });
     };
 
@@ -202,3 +204,4 @@
     }
 
 })();
+
